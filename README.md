@@ -14,6 +14,7 @@ Kelola Tempat — Mengelola lokasi atau ruangan gereja lengkap dengan informasi 
 Data Integrity Validation — Mencegah penghapusan petugas atau tempat yang sedang terikat dalam kegiatan aktif
 
 ###**Alur Program & Petunjuk Eksekusi**###
+
 <img width="538" height="162" alt="image" src="https://github.com/user-attachments/assets/86ec68ca-1ab9-4409-8097-d90964b29156" />
 
 Tampilan menu utama
