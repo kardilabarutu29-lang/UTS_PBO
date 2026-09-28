@@ -66,13 +66,19 @@ Output dari submenu Kelola Petugas -> Lihat Data dan Kelola Tempat -> Lihat Data
 
 
 
-Proses mengupdate Petugas
-
 <img width="740" height="348" alt="image" src="https://github.com/user-attachments/assets/2f194c76-c880-4fb8-a378-140fdc0d02ac" />
 
+
+Proses mengupdate Petugas
+
+
+
+<img width="727" height="268" alt="image" src="https://github.com/user-attachments/assets/6027432e-cd65-4693-bdcd-f437d27ad692" />
 
 Output jika ingin menghapus tempat namun tempat masih digunakan
 
 
-<img width="727" height="268" alt="image" src="https://github.com/user-attachments/assets/6027432e-cd65-4693-bdcd-f437d27ad692" />
+<img width="712" height="133" alt="image" src="https://github.com/user-attachments/assets/916ae642-fd0e-4742-961d-5c9963d09e96" />
+
+inputan jika tidak sesuai tipe data
 
