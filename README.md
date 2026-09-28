@@ -13,6 +13,28 @@ Kelola Tempat — Mengelola lokasi atau ruangan gereja lengkap dengan informasi 
 
 Data Integrity Validation — Mencegah penghapusan petugas atau tempat yang sedang terikat dalam kegiatan aktif
 
+
+Terdapat pilihan operasi standar CRUD (Create, Read, Update, Delete) dan fungsi pencarian yang berjalan dengan logika bisnis sebagai berikut:
+
+Lihat Data (Read & Polymorphism):
+Menampilkan seluruh entitas data yang tersimpan. Pada modul kegiatan, output memanfaatkan pilar Polymorphism (Overriding) untuk membedakan format cetak antara entitas Ibadah dan Sosial.
+
+Tambah Data (Create & Relasi):
+Menambahkan entitas baru ke dalam memori sistem. Khusus penambahan kegiatan, sistem mewajibkan pengikatan ID Petugas dan ID Tempat yang valid untuk menjaga integritas relasi antar-objek.
+
+Ubah Data (Update):
+Memperbarui informasi spesifik dari data yang sudah ada berdasarkan ID unik entitas tanpa merusak keterhubungan data lainnya.
+
+Hapus Data (Delete & Validasi Integritas):
+Menghapus data tertentu dari sistem. Sistem dilengkapi dengan Validasi Integritas Data yang melarang penghapusan data Petugas atau Tempat jika data tersebut masih digunakan/terikat pada kegiatan aktif.
+
+Pari / Cari Data (Polymorphism Overloading):
+Memungkinkan pencarian data secara fleksibel. Method pencarian diimplementasikan menggunakan Overloading sehingga pengguna dapat mencari kegiatan berdasarkan kriteria berbeda (misalnya via ID atau via Kategori).
+
+
+Sistem dilengkapi dengan penanganan error (Try-Catch) pada setiap menu input. Jika pengguna memasukkan tipe data yang salah (misalnya memasukkan teks saat sistem meminta angka), program tidak akan berhenti secara mendadak (crash), melainkan menampilkan pesan peringatan ramah pengguna dan meminta input ulang.
+
+
 **Alur Program & Petunjuk Eksekusi**
 
 <img width="538" height="162" alt="image" src="https://github.com/user-attachments/assets/86ec68ca-1ab9-4409-8097-d90964b29156" />
@@ -49,7 +71,7 @@ Proses mengupdate Petugas
 <img width="740" height="348" alt="image" src="https://github.com/user-attachments/assets/2f194c76-c880-4fb8-a378-140fdc0d02ac" />
 
 
-Output jika ingin menhapus tempat namun tempat masih digunakan
+Output jika ingin menghapus tempat namun tempat masih digunakan
 
 
 <img width="727" height="268" alt="image" src="https://github.com/user-attachments/assets/6027432e-cd65-4693-bdcd-f437d27ad692" />
