@@ -1,4 +1,4 @@
-#**Sistem Manajemen Jadwal Kegiatan Gereja**#
+**Sistem Manajemen Jadwal Kegiatan Gereja**
 
 Sistem Manajemen Jadwal Kegiatan Gereja adalah aplikasi berbasis Java CLI (Command Line Interface) yang dirancang untuk mengelola dan mengorganisasi agenda kegiatan gereja, data petugas, serta lokasi pelaksanaan acara secara terstruktur.
 
@@ -13,19 +13,27 @@ Kelola Tempat — Mengelola lokasi atau ruangan gereja lengkap dengan informasi 
 
 Data Integrity Validation — Mencegah penghapusan petugas atau tempat yang sedang terikat dalam kegiatan aktif
 
-##***Alur Program & Petunjuk Eksekusi***##
+**Alur Program & Petunjuk Eksekusi**
 
 <img width="538" height="162" alt="image" src="https://github.com/user-attachments/assets/86ec68ca-1ab9-4409-8097-d90964b29156" />
 
 Tampilan menu utama
 
+
+
 <img width="1055" height="273" alt="image" src="https://github.com/user-attachments/assets/677c1e43-6e2b-422c-9f31-4bd2f253eb19" />
 
 Pilih menu 1 (Kelola Kegiatan) lalu menu 1 (Lihat Data). Menunjukkan method @Override mencetak format khas [IBADAH] dan [SOSIAL].
 
+
+
 <img width="1103" height="587" alt="image" src="https://github.com/user-attachments/assets/ad71f89f-ba21-46c5-9137-fa484cba84f4" />
 
 Proses memasukkan data kegiatan baru dengan mengaitkan ID Petugas (P01) dan ID Tempat (T01).
+
+<img width="760" height="262" alt="image" src="https://github.com/user-attachments/assets/be6d35b6-3b0f-4347-b0ff-31d0163b2422" />
+
+Menghapus kegiatan jika kegiatan telah selesai
 
 
 <img width="663" height="257" alt="image" src="https://github.com/user-attachments/assets/16be525b-1ee6-4753-9526-2295d1632c60" />
@@ -34,4 +42,15 @@ Proses memasukkan data kegiatan baru dengan mengaitkan ID Petugas (P01) dan ID T
 
 Output dari submenu Kelola Petugas -> Lihat Data dan Kelola Tempat -> Lihat Data.
 
+
+
+Proses mengupdate Petugas
+
+<img width="740" height="348" alt="image" src="https://github.com/user-attachments/assets/2f194c76-c880-4fb8-a378-140fdc0d02ac" />
+
+
+Output jika ingin menhapus tempat namun tempat masih digunakan
+
+
+<img width="727" height="268" alt="image" src="https://github.com/user-attachments/assets/6027432e-cd65-4693-bdcd-f437d27ad692" />
 
