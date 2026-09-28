@@ -80,5 +80,7 @@ Output jika ingin menghapus tempat namun tempat masih digunakan
 
 <img width="712" height="133" alt="image" src="https://github.com/user-attachments/assets/916ae642-fd0e-4742-961d-5c9963d09e96" />
 
+<img width="718" height="427" alt="image" src="https://github.com/user-attachments/assets/852dc45f-38d3-4879-9a75-9f3ec5452fb7" />
+
 inputan jika tidak sesuai tipe data
 
