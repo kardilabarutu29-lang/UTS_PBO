@@ -1,36 +1,42 @@
-**Sistem Manajemen Jadwal Kegiatan Gereja**
+#  Sistem Manajemen Jadwal Kegiatan Gereja
 
-Sistem Manajemen Jadwal Kegiatan Gereja adalah aplikasi berbasis Java CLI (Command Line Interface) yang dirancang untuk mengelola dan mengorganisasi agenda kegiatan gereja, data petugas, serta lokasi pelaksanaan acara secara terstruktur.
+**Sistem Manajemen Jadwal Kegiatan Gereja** adalah aplikasi berbasis **Java CLI** (*Command Line Interface*) yang dirancang untuk mengelola dan mengorganisasi agenda kegiatan gereja, data petugas, serta lokasi pelaksanaan acara secara terstruktur.
 
-Aplikasi ini dibangun untuk memenuhi kriteria pemrograman berorientasi objek (OOP) dengan menerapkan seluruh pilar utama: Inheritance, Polymorphism (Overriding & Overloading), Encapsulation, serta alur Condition & Looping.
+Aplikasi ini dibangun untuk memenuhi kriteria Pemrograman Berorientasi Objek (**OOP**) dengan menerapkan seluruh pilar utama: **Inheritance**, **Polymorphism** (*Overriding & Overloading*), **Encapsulation**, serta alur **Condition & Looping**.
 
-Fungsi Utama & Kegunaan:
-Kelola Kegiatan — Menambahkan, mengubah, menghapus, dan menampilkan jadwal kegiatan (Ibadah / Sosial).
+---
 
-Kelola Petugas — Mengelola data pelayan gereja (Prodiakon, Lektor, Pemusik, dll.) beserta nomor kontak dan peran.
+##  Fungsi Utama & Kegunaan
 
-Kelola Tempat — Mengelola lokasi atau ruangan gereja lengkap dengan informasi kapasitasnya.
+* **Kelola Kegiatan** — Menambahkan, mengubah, menghapus, dan menampilkan jadwal kegiatan (**Ibadah** / **Sosial**).
+* **Kelola Petugas** — Mengelola data pelayan gereja (Prodiakon, Lektor, Pemusik, dll.) beserta nomor kontak dan peran.
+* **Kelola Tempat** — Mengelola lokasi atau ruangan gereja lengkap dengan informasi kapasitasnya.
+* **Data Integrity Validation** — Mencegah penghapusan petugas atau tempat yang sedang terikat dalam kegiatan aktif.
 
-Data Integrity Validation — Mencegah penghapusan petugas atau tempat yang sedang terikat dalam kegiatan aktif
+---
 
+## Logika Bisnis & Fitur Operasional
 
-Terdapat pilihan operasi standar CRUD (Create, Read, Update, Delete) dan fungsi pencarian yang berjalan dengan logika bisnis sebagai berikut:
+Terdapat pilihan operasi standar **CRUD** (*Create, Read, Update, Delete*) dan fungsi pencarian yang berjalan dengan logika bisnis 
 
-Lihat Data (Read & Polymorphism):
-Menampilkan seluruh entitas data yang tersimpan. Pada modul kegiatan, output memanfaatkan pilar Polymorphism (Overriding) untuk membedakan format cetak antara entitas Ibadah dan Sosial.
+* **Lihat Data (Read & Polymorphism):** Menampilkan seluruh entitas data yang tersimpan. Pada modul kegiatan, *output* memanfaatkan pilar **Polymorphism (Overriding)** untuk membedakan format cetak antara entitas **Ibadah** dan **Sosial**.
+* **Tambah Data (Create & Relasi):** Menambahkan entitas baru ke dalam memori sistem Khusus penambahan kegiatan, sistem mewajibkan pengikatan **ID Petugas** dan **ID Tempat** yang valid untuk menjaga integritas relasi antar-objek
+* **Ubah Data (Update):** Memperbarui informasi spesifik dari data yang sudah ada berdasarkan ID unik entitas tanpa merusak keterhubungan data lainnya.
+* **Hapus Data (Delete & Validasi Integritas):** Menghapus data tertentu dari sistem. Sistem dilengkapi dengan **Validasi Integritas Data** yang melarang penghapusan data Petugas atau Tempat jika data tersebut masih digunakan/terikat pada kegiatan aktif.
+* **Cari Data (Polymorphism Overloading):** Memungkinkan pencarian data secara fleksibel]. Method pencarian diimplementasikan menggunakan **Overloading** sehingga pengguna dapat mencari kegiatan berdasarkan kriteria berbeda (misalnya via **ID** atau via **Kategori**).
 
-Tambah Data (Create & Relasi):
-Menambahkan entitas baru ke dalam memori sistem. Khusus penambahan kegiatan, sistem mewajibkan pengikatan ID Petugas dan ID Tempat yang valid untuk menjaga integritas relasi antar-objek.
+> ** Penanganan Error (Exception Handling):**  
+> Sistem dilengkapi dengan penanganan error (`try-catch`) pada setiap menu input. Jika pengguna memasukkan tipe data yang salah (misalnya memasukkan teks saat sistem meminta angka), program tidak akan berhenti secara mendadak (*crash*), melainkan menampilkan pesan peringatan yang ramah dan meminta input ulang.
 
-Ubah Data (Update):
-Memperbarui informasi spesifik dari data yang sudah ada berdasarkan ID unik entitas tanpa merusak keterhubungan data lainnya.
+---
 
-Hapus Data (Delete & Validasi Integritas):
-Menghapus data tertentu dari sistem. Sistem dilengkapi dengan Validasi Integritas Data yang melarang penghapusan data Petugas atau Tempat jika data tersebut masih digunakan/terikat pada kegiatan aktif.
+## Alur Program & Petunjuk Eksekusi
 
-Pari / Cari Data (Polymorphism Overloading):
-Memungkinkan pencarian data secara fleksibel. Method pencarian diimplementasikan menggunakan Overloading sehingga pengguna dapat mencari kegiatan berdasarkan kriteria berbeda (misalnya via ID atau via Kategori).
+### 1. Tampilan Menu Utama
+Menampilkan navigasi utama untuk memilih pengelolaan Kegiatan, Petugas, Tempat, atau Keluar dari program[cite: 1].
 
+### 2. Lihat Data Kegiatan (Polymorphism)
+Menunjukkan method `@Override` yang mencetak format khusus berdasarkan tipe kegiatan `[IBADAH]` dan `[SOSIAL]`[cite: 1].
 
 Sistem dilengkapi dengan penanganan error (Try-Catch) pada setiap menu input. Jika pengguna memasukkan tipe data yang salah (misalnya memasukkan teks saat sistem meminta angka), program tidak akan berhenti secara mendadak (crash), melainkan menampilkan pesan peringatan ramah pengguna dan meminta input ulang.
 
