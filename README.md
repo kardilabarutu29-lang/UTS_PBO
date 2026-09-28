@@ -25,8 +25,8 @@ Terdapat pilihan operasi standar **CRUD** (*Create, Read, Update, Delete*) dan f
 * **Hapus Data (Delete & Validasi Integritas):** Menghapus data tertentu dari sistem. Sistem dilengkapi dengan **Validasi Integritas Data** yang melarang penghapusan data Petugas atau Tempat jika data tersebut masih digunakan/terikat pada kegiatan aktif.
 * **Cari Data (Polymorphism Overloading):** Memungkinkan pencarian data secara fleksibel]. Method pencarian diimplementasikan menggunakan **Overloading** sehingga pengguna dapat mencari kegiatan berdasarkan kriteria berbeda (misalnya via **ID** atau via **Kategori**).
 
-> ** Penanganan Error (Exception Handling):**  
-> Sistem dilengkapi dengan penanganan error (`try-catch`) pada setiap menu input. Jika pengguna memasukkan tipe data yang salah (misalnya memasukkan teks saat sistem meminta angka), program tidak akan berhenti secara mendadak (*crash*), melainkan menampilkan pesan peringatan yang ramah dan meminta input ulang.
+ ** Penanganan Error (Exception Handling):**  
+ Sistem dilengkapi dengan penanganan error (`try-catch`) pada setiap menu input. Jika pengguna memasukkan tipe data yang salah (misalnya memasukkan teks saat sistem meminta angka), program tidak akan berhenti secara mendadak (*crash*), melainkan menampilkan pesan peringatan yang ramah dan meminta input ulang.
 
 ---
 
