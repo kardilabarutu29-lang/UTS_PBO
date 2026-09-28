@@ -1,4 +1,5 @@
-*Sistem Manajemen Jadwal Kegiatan Gereja*
+#**Sistem Manajemen Jadwal Kegiatan Gereja**#
+
 Sistem Manajemen Jadwal Kegiatan Gereja adalah aplikasi berbasis Java CLI (Command Line Interface) yang dirancang untuk mengelola dan mengorganisasi agenda kegiatan gereja, data petugas, serta lokasi pelaksanaan acara secara terstruktur.
 
 Aplikasi ini dibangun untuk memenuhi kriteria pemrograman berorientasi objek (OOP) dengan menerapkan seluruh pilar utama: Inheritance, Polymorphism (Overriding & Overloading), Encapsulation, serta alur Condition & Looping.
@@ -12,7 +13,7 @@ Kelola Tempat — Mengelola lokasi atau ruangan gereja lengkap dengan informasi 
 
 Data Integrity Validation — Mencegah penghapusan petugas atau tempat yang sedang terikat dalam kegiatan aktif
 
-##Alur Program & Petunjuk Eksekusi##
+###**Alur Program & Petunjuk Eksekusi**###
 <img width="538" height="162" alt="image" src="https://github.com/user-attachments/assets/86ec68ca-1ab9-4409-8097-d90964b29156" />
 
 Tampilan menu utama
